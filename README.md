@@ -28,7 +28,7 @@ pip install mimey
 
 ### Detect the mimetype
 
-```
+```python
 >>> import mimey
 >>> mimey.detect_mime(b"\x89PNG\r\n\x1a\n")
 'image/png'
