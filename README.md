@@ -23,10 +23,10 @@ import percently
 # Example data
 data = [10.5, 22.0, 18.7, 19.2, 30.1, 25.3]
 
-# Calculate the 95th percentlyile (f64)
-p95 = percently.percentlyile(data, 95)
-print(f"95th percentlyile: {p95:.2f}")
+# Calculate the 95th percentile (f64)
+p95 = percently.percentile(data, 95)
+print(f"95th percentile: {p95:.2f}")
 
-Example output
-95th percentlyile: 29.12
+# Example output
+95th percentile: 29.12
 ```
