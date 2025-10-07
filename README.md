@@ -13,7 +13,7 @@ uv add percently
 or
 
 ```
-pip install percet
+pip install percently
 ```
 
 ## 🧮 Usage
