@@ -1,20 +1,20 @@
 [package]
-name = "mimey"
-version = "0.1.3"
+name = "percently"
+version = "0.1.1"
 edition = "2021"
 readme = "README.md"
 authors = ["ransomware <4thel00z@gmail.com>"]
-description = "Mimey is a fast and efficient mime type and file extension detector implemented in Rust and exposed as a Python package using PyO3. It is designed to quickly identify mime types and file extensions from byte arrays."
-keywords = ["mime", "rust", "python", "pyo3", "mime-type", "file-extension"]
+description = "Fast percentile calculator written in Rust."
+keywords = ["statistics", "rust", "python", "pyo3", "percentile"]
 license = "MIT"
-repository = "https://github.com/4thel00z/mimey"
-homepage = "https://github.com/4thel00z/mimey"
+repository = "https://github.com/4thel00z/percently"
+homepage = "https://github.com/4thel00z/percently"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
-name = "mimey"
+name = "percently"
 crate-type = ["cdylib"]
 
 [dependencies]
-mimetype-detector = "0.2.2"
+kolmogorov_smirnov = "1.1.0"
 pyo3 = { version = "0.25.0", features = ["anyhow", "serde", "default", "extension-module"] }

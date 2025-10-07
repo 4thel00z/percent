@@ -1,39 +1,32 @@
-# mimey
+# percently
 
 ## Motivation
 
-A fast mime parser written in Rust and exposed as python package.
+A fast percentile calculator written in rust, to use to calculate the buckets etc. after performing a loadtest, etc.
 
 ## Installation
 
 ```
-uv add mimey
+uv add percently
 ```
 
 or
 
 ```
-pip install mimey
+pip install percet
 ```
 
-## Usage
-
-
-### Detect a type
-```python
->>> import mimey
->>> mimey.detect_type(b"\x89PNG\r\n\x1a\n")
-'.png'
+## 🧮 Usage
 ```
+import percently
 
-### Detect the mimetype
+# Example data
+data = [10.5, 22.0, 18.7, 19.2, 30.1, 25.3]
 
-```python
->>> import mimey
->>> mimey.detect_mime(b"\x89PNG\r\n\x1a\n")
-'image/png'
+# Calculate the 95th percentlyile (f64)
+p95 = percently.percentlyile(data, 95)
+print(f"95th percentlyile: {p95:.2f}")
+
+Example output
+95th percentlyile: 29.12
 ```
-
-## TODOs
-
-- Add a mechanism to register new mime types.
